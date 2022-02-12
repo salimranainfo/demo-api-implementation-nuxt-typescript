@@ -4,9 +4,14 @@
       <div v-if="!loading" class="mb-6">
         <nuxt-link
           to="/"
-          class="font-bold px-4 py-2 border border-gray-400 rounded-md text-lg"
-          >Back</nuxt-link
+          class="font-bold px-4 py-2 border border-gray-400 rounded-md text-lg space-x-1"
         >
+          <font-awesome-icon
+            icon="angle-left"
+            class="text-base"
+          ></font-awesome-icon>
+          <span>Back</span>
+        </nuxt-link>
       </div>
       <div v-if="user && !loading" class="table text-lg">
         <div class="row">
