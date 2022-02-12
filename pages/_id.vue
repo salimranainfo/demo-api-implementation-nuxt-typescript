@@ -1,6 +1,13 @@
 <template>
   <div class="h-full flex justify-center items-center">
     <main class="max-w-[1100px] mx-auto bg-white p-6 rounded-md shadow-md">
+      <div v-if="!loading" class="mb-6">
+        <nuxt-link
+          to="/"
+          class="font-bold px-4 py-2 border border-gray-400 rounded-md text-lg"
+          >Back</nuxt-link
+        >
+      </div>
       <div v-if="user && !loading" class="table text-lg">
         <div class="row">
           <span class="font-bold">ID</span>
